@@ -177,7 +177,7 @@ def _fit_circle_path(vertice):
         return 0, -90, nan, nan
     centlon, centlat, eddy_radius, err = fit_circle(c_x, c_y)
     centlon, centlat = local_to_coordinates(centlon, centlat, lon0, lat0)
-    centlon = (centlon - lon0 + 180) % 360 + lon0 - 180
+    #centlon = (centlon - lon0 + 180) % 360 + lon0 - 180
     return centlon, centlat, eddy_radius, err
 
 
